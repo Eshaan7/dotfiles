@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # stored in /usr/local/bin
 
 TEXT_RESET='\e[0m'
