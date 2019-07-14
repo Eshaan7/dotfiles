@@ -1,13 +1,12 @@
 #!/bin/bash
-# stored in /usr/local/bin
+# stored in /usr/local/bin/
 
-TEXT_RESET='\e[0m'
+NC='\033[0m' # No Color
 TEXT_YELLOW='\e[0;33m'
 TEXT_RED_B='\e[1;31m'
 
-echo -e $TEXT_YELLOW
-echo "\n# running apt updates...\n"
-echo -e $TEXT_RESET
+echo -e "${TEXT_YELLOW}\n# Running apt updates"
+echo -e "----------\n${NC}"
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt full-upgrade -y
@@ -19,8 +18,7 @@ sudo apt full-upgrade -y
 #sudo apt-get update -y
 #sudo apt-get full-upgrade -y
 
-echo -e $TEXT_YELLOW
-echo "\n# cleaning...\n"
-echo -e $TEXT_RESET
+echo -e "${TEXT_YELLOW}\n# Cleaning"
+echo -e "----------\n${NC}"
 sudo apt autoremove
 sudo apt-get clean
