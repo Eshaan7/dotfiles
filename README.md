@@ -1,2 +1,2 @@
 # dotfiles
-<a href="https://Eshaan7.cf/">Eshaan7</a> dotfiles
+<a href="https://eshaan7.github.io/">Eshaan7</a> dotfiles, collection of small scripts to make life easier.
